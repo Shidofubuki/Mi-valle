@@ -1,0 +1,47 @@
+Create database crud;
+
+use crud
+
+Create table programa (
+Progra_id INT (10),
+Progra_Nombre VARCHAR (20),
+Progra_tipo INT (5)
+);
+
+Create table fichas (
+ficha_numero INT(10),
+ficha_progra INT(10)
+);
+
+Create table usuarios (
+usua_id INT (10),
+usua_nomuser VARCHAR (50),
+usua_contra VARCHAR (20),
+usua_tipo VARCHAR (30)
+);
+
+Create table tiposprograma (
+tiposp_id INT (10),
+tiposp_tipo VARCHAR (30)
+);
+
+Create table aprendices (
+apre_id INT (10),
+apre_tipoid VARCHAR (3),
+apre_numid VARCHAR (20),
+apre_Nombres VARCHAR (60),
+apre_Apellidos VARCHAR (60),
+apre_Direccion VARCHAR (80),
+apre_Telefono VARCHAR (20),
+apre_Ficha INT (10) 
+);
+
+INSERT INTO aprendices VALUES (1241515,'CC',1333233301,'carlo','martinez','calle 14 cra 8',3152200214,2068058);
+
+INSERT INTO aprendices VALUES (32725211,'CC',3233,'carlo','marquez','mz 14 cs 8',3163027407,2068058);
+INSERT INTO aprendices VALUES (1003233302,'CC',2621,'pedro','marquez','calle 14 cra 8',3152200214,2068058);
+INSERT INTO usuarios VALUES (1003233302,'shido','pedro','Administrador');
+INSERT INTO programa VALUES (1003233302,'pedro','Tecnologo');
+INSERT INTO programa VALUES (1003233302,'pedro','Tecnologo');
+INSERT INTO usuarios VALUES (1003233302,'manuel','pedro','Administrador');
+INSERT INTO fichas VALUES (1003233302,'ADSI');
